@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.m1{
+			height: 100px;
+			width: 100px;
+			animation-name: colours;
+			animation-duration: 5s;
+			position: relative;
+			background-color: blue;
+			top: 0px;
+			left: 0px;
+			float: left;
+			animation-iteration-count: 10;
+			animation-direction: alternate;
+		}
+		.m2{
+			height: 100px;
+			width: 100px;
+			animation-name: colours2;
+			animation-duration: 5s;
+			position: relative;
+			background-color: blue;
+			top: 0px;
+			left: 0px;
+			float: left;
+			animation-iteration-count: 10;
+			animation-direction: alternate;
+		}
+		@keyframes colours {
+			0%{
+				top: 0px;
+				left: 0px;
+				background-color: blue;	
+				transform: rotate(180deg);
+			}
+			20%{
+				top: 0px;
+				left: 250px;
+				background-color: violet;
+				transform: rotate(360deg);
+			}
+			40%{
+				top: 250px;
+				left: 250px;
+				background-color: pink;
+				transform: rotate(180deg);
+			}
+			60%{
+				top: 250px;
+				left: 500px;
+				background-color: yellow;
+				transform: rotate(360deg);
+			}
+			80%{
+				top: 500px;
+				left: 500px;
+				background-color: greenyellow;
+				transform: rotate(180deg);
+			}
+			100%{
+				top: 500px;
+				left: 900px;
+				background-color: green;
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes colours2 {
+			0%{
+				top: 0px;
+				left: 900px;
+				background-color: blue;				
+				transform: rotate(180deg);
+			}
+			20%{
+				top: 0px;
+				left: 700px;
+				background-color: violet;
+				transform: rotate(360deg);
+			}
+			40%{
+				top: 250px;
+				left: 700px;
+				background-color: pink;
+				transform: rotate(180deg);
+			}
+			60%{
+				top: 250px;
+				left: 500px;
+				background-color: yellow;
+				transform: rotate(360deg);
+			}
+			80%{
+				top: 500px;
+				left: 500px;
+				background-color: greenyellow;
+				transform: rotate(180deg);
+			}
+			100%{
+				top: 500px;
+				left: 0px;
+				background-color: green;
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="m1"></div>
+	<div class="m2"></div>
+</body>
+</body>
+</html>

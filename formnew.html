@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.border{
+			align-items: center;
+		}
+
+	</style>
+</head>
+<body bgcolor="lightpink">
+	<h1 align="center">Student registration</h1>
+	<form calss="form "align="center">
+		<fieldset class="border">
+			<!-- <legend>new form</legend> -->
+			<table align="center">
+				<tr>
+					<td>Username:</td>
+					<td><input type="text" name="name" id="username"></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="text" name="Password" id="Password"></td>
+				</tr>
+				<tr>
+					<td>Repeat Password:</td>
+					<td><input type="text" name="Rpassword" id="Rpassword"></td>
+				</tr>
+				<tr>
+					<td>Enrollment no.:</td>
+					<td><input type="text" name="Enrollment no" id="Enrollment"> </td>
+				</tr>
+				<tr>
+					<td>Age:</td>
+					<td><input type="text" name="age" id="Age"></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="Email" id="Email"></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" name="submit" id="submit" onclick="checkDetails()">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	<script>
+		function checkDetails() {
+			name =document.getElementById("username");
+			console.log(name);
+			patternName = "^[\\w]{50000}$"
+			Regex=new RegExp(patternName);
+			if (Regex.test(name)){
+				console.log(name)
+			}
+			else{
+				alert("invalid name");
+			}			
+		}
+
+	</script>
+</body>
+</html>
